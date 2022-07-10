@@ -20,5 +20,11 @@ type Query {
 
 ### graphql에서의 type
 
-GET request에 해당하는 것들은 `type Query`안에
-GET request를 제외하고 나머지 것들은 `type Mutation`안에 넣어준다.
+#### request들을 넣는 곳
+
+GET request(: database에서 얻기 위한 동작)에 해당하는 것들은 `type Query`안에
+GET request를 제외하고 나머지 것들(: database를 변경, server의 상태를 변경)은 `type Mutation`안에 넣어준다.
+
+#### nullable/ required type definition
+
+type 뒤에 `Tweet!`처럼 "!"를 붙여주면, required로 정의할 수 있다.
