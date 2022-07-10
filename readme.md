@@ -17,3 +17,8 @@ type Query {
 ```
 
 이렇게 `type Query` 안에 넣어준다.
+
+### graphql에서의 type
+
+GET request에 해당하는 것들은 `type Query`안에
+GET request를 제외하고 나머지 것들은 `type Mutation`안에 넣어준다.
